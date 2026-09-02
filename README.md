@@ -29,7 +29,7 @@ https://github.com/user-attachments/assets/a0888b04-f9da-4690-8bc5-d15b7050765c
 
 ### Pressure Coefficient ($Cp_s$) Layout
 ![Pressure_Layout](Images/Pressure_Layout.png)
-*Figure 3: Multi-angle breakdown of static pressure distribution across the chassis, front wing, and rear wing assembly during dynamic cornering.*
+*Figure 3: Multi-angle breakdown of static pressure distribution across all surfaces during cornering, with a $Cp_0$ isosurface.*
 
 ### Q-Criterion Wake Resolution (AMR)
 ![Q-Criterion_Layout](Images/Q-Criterion_Layout.png)
