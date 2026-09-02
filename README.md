@@ -21,13 +21,17 @@ To maintain a clean and efficient workflow:
 ![Post-Process](Images/Post-Process.png)
 *Figure 1: Full-vehicle transient cornering simulation showing surface pressure ($Cp_s$) and wake structures mapped across a curved track geometry.*
 
+### $Cp_0$ Sweep Scene
+![Cp0_Slider](Images/Cp0_Slider.mp4)
+*Figure 2: Full-vehicle x-plane sweep of total pressure coefficient, highlighting vortex development and regions of loss.*
+
 ### Pressure Coefficient ($Cp_s$) Layout
-![Pressure Layout](Images/Pressure_Layout.png)
-*Figure 2: Multi-angle breakdown of static pressure distribution across the chassis, front wing, and rear wing assembly during dynamic cornering.*
+![Pressure_Layout](Images/Pressure_Layout.png)
+*Figure 3: Multi-angle breakdown of static pressure distribution across the chassis, front wing, and rear wing assembly during dynamic cornering.*
 
 ### Q-Criterion Wake Resolution (AMR)
-![Q-Criterion Layout](Images/Q-Criterion Layout.png)
-*Figure 3: Isosurfaces of Q-criterion coloured by velocity magnitude, demonstrating the automated capture of tyre wakes, front wing Y-vortices, and rear wing tip vortices using Adaptive Mesh Refinement.*
+![Q-Criterion_Layout](Images/Q-Criterion_Layout.png)
+*Figure 4: Isosurfaces of Q-criterion coloured by velocity magnitude, demonstrating the automated capture of tyre wakes, front wing Y-vortices, and rear wing tip vortices using Adaptive Mesh Refinement.*
 
 ## 🛠️ Software Stack
 * **CFD Solver & Automation:** Simcenter STAR-CCM+ (Parametric fields, Java/Macro automation, AMR)
