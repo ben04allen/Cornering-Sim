@@ -18,7 +18,7 @@ To maintain a clean and efficient workflow:
 ## 📊 Visualisation & Post-Processing Results
 
 ### Dynamic Cornering Overview & Flow Field
-![Post-Process](images/Post-Process.png)
+![Post-Process](Images/Post-Process.png)
 *Figure 1: Full-vehicle transient cornering simulation showing surface pressure ($Cp_s$) and wake structures mapped across a curved track geometry.*
 
 ### Pressure Coefficient ($Cp_s$) Layout
@@ -26,7 +26,7 @@ To maintain a clean and efficient workflow:
 *Figure 2: Multi-angle breakdown of static pressure distribution across the chassis, front wing, and rear wing assembly during dynamic cornering.*
 
 ### Q-Criterion Wake Resolution (AMR)
-![Q-Criterion Layout](images/Q-Criterion Layout.png)
+![Q-Criterion Layout](Images/Q-Criterion Layout.png)
 *Figure 3: Isosurfaces of Q-criterion coloured by velocity magnitude, demonstrating the automated capture of tyre wakes, front wing Y-vortices, and rear wing tip vortices using Adaptive Mesh Refinement.*
 
 ## 🛠️ Software Stack
