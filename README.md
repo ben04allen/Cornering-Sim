@@ -22,7 +22,7 @@ To maintain a clean and efficient workflow:
 *Figure 1: Full-vehicle transient cornering simulation showing surface pressure ($Cp_s$) and wake structures mapped across a curved track geometry.*
 
 ### Pressure Coefficient ($Cp_s$) Layout
-![Pressure Layout](Images/Pressure Layout.png)
+![Pressure Layout](Images/Pressure_Layout.png)
 *Figure 2: Multi-angle breakdown of static pressure distribution across the chassis, front wing, and rear wing assembly during dynamic cornering.*
 
 ### Q-Criterion Wake Resolution (AMR)
