@@ -1,7 +1,7 @@
 # Fully Parametric Dynamic Cornering CFD Simulation Environment
 
 ## 📌 Overview
-Developed for the LUMotorsport Formula Student team, this project establishes a fully automated, native STAR-CCM+ simulation environment designed to evaluate vehicle aerodynamic performance under transient cornering states. By parameterising the entire domain and vehicle attitude within the solver, the framework eliminates unnecessary CAD rebuilds in Siemens NX and provides high-fidelity flow-field data across diverse dynamic conditions.
+Developed for the LUMotorsport Formula Student team, this project establishes a fully automated, native STAR-CCM+ simulation environment designed to evaluate vehicle aerodynamic performance under transient cornering states. By parameterising the entire domain and vehicle attitude within the solver, the framework eliminates unnecessary CAD rebuilds in Siemens NX and provides high-fidelity flow-field data across a diverse range of conditions.
 
 ## ⚙️ Core Technical Architecture & Parameterization
 Unlike standard straight-line setups, this environment is fully driven by parameterised runtime variables within STAR-CCM+:
@@ -29,7 +29,7 @@ https://github.com/user-attachments/assets/a0888b04-f9da-4690-8bc5-d15b7050765c
 
 ### Pressure Coefficient ($Cp_s$) Layout
 ![Pressure_Layout](Images/Pressure_Layout.png)
-*Figure 3: Multi-angle breakdown of static pressure distribution across all surfaces during cornering, with a *$Cp_0$* isosurface.*
+*Figure 3: Multi-angle breakdown of static pressure distribution across all surfaces during cornering, with a* $Cp_0$ *isosurface.*
 
 ### Q-Criterion Wake Resolution (AMR)
 ![Q-Criterion_Layout](Images/Q-Criterion_Layout.png)
