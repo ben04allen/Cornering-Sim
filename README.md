@@ -22,7 +22,7 @@ To maintain a clean and efficient workflow:
 *Figure 1: Full-vehicle transient cornering simulation showing surface pressure ($Cp_s$) and wake structures mapped across a curved track geometry.*
 
 ### $Cp_0$ Sweep Scene
-![Cp0_Slider](Images/Cp0_Slider.mp4)
+https://github.com/user-attachments/assets/a0888b04-f9da-4690-8bc5-d15b7050765c
 *Figure 2: Full-vehicle x-plane sweep of total pressure coefficient, highlighting vortex development and regions of loss.*
 
 ### Pressure Coefficient ($Cp_s$) Layout
