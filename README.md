@@ -19,7 +19,7 @@ To maintain a clean and efficient workflow:
 
 ### Dynamic Cornering Overview & Flow Field
 ![Post-Process](Images/Post-Process.png)
-*Figure 1: Full-vehicle transient cornering simulation showing surface pressure ($Cp_s$) and wake structures mapped across a curved track geometry.*
+*Figure 1: Full-vehicle transient cornering simulation showing surface pressure* $Cp_s$ *and wake structures mapped across a curved track geometry.*
 
 ### $Cp_0$ Sweep Scene
 
@@ -29,7 +29,7 @@ https://github.com/user-attachments/assets/a0888b04-f9da-4690-8bc5-d15b7050765c
 
 ### Pressure Coefficient ($Cp_s$) Layout
 ![Pressure_Layout](Images/Pressure_Layout.png)
-*Figure 3: Multi-angle breakdown of static pressure distribution across all surfaces during cornering, with a $Cp_0$ isosurface.*
+*Figure 3: Multi-angle breakdown of static pressure distribution across all surfaces during cornering, with a *$Cp_0$* isosurface.*
 
 ### Q-Criterion Wake Resolution (AMR)
 ![Q-Criterion_Layout](Images/Q-Criterion_Layout.png)
