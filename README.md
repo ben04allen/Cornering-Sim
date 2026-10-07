@@ -1,25 +1,25 @@
-# Fully Parametric Dynamic Cornering CFD Simulation Environment
+# Fully Parametric Cornering CFD Simulation
 
-## 📌 Overview
-Developed for the LUMotorsport Formula Student team, this project establishes a fully automated, native STAR-CCM+ simulation environment designed to evaluate vehicle aerodynamic performance under transient cornering states. By parameterising the entire domain and vehicle attitude within the solver, the framework eliminates unnecessary CAD rebuilds in Siemens NX and provides high-fidelity flow-field data across a diverse range of conditions.
+## Overview
+Developed for the LUMotorsport Formula Student team, this project establishes a fully automated STAR-CCM+ simulation to evaluate vehicle aerodynamic performance during transient cornering. By parameterising the domain and vehicle attitude within the solver, the framework eliminates unnecessary CAD rebuilds in Siemens NX and provides high-fidelity flow-field data across a wide range of conditions.
 
-## ⚙️ Core Technical Architecture & Parameterization
-Unlike standard straight-line setups, this environment is fully driven by parameterised runtime variables within STAR-CCM+:
-* **Kinematic & Path Parameters:** Fully parameterised for corner radius, g-force experienced in the turn, steer angles, and global domain dimensions (height, width, length).
-* **Dynamic Vehicle Attitude:** Manages full vehicle attitude changes including **roll, pitch, and yaw**. 
-* **Automated Coordinate System Tracking:** As the vehicle attitude and steering angles update, all individual tyre coordinate systems, the centre of rotation, and the vehicle CG update dynamically and synchronously. 
-* **Coordinate Transformation Maths:** To handle complex geometry shifts during steering and attitude adjustments, the framework relies on automated mathematical transformations—converting between **Cartesian and polar coordinate systems** natively inside the solver to ensure proper alignment of local tyre boundaries without manual intervention.
+## Architecture
+This simulation is driven by parameterised variables within STAR-CCM+:
+* **Dimensions and Kinematics:** Fully parameterised for corner radius, g-force experienced in the turn, steer angles, and global domain dimensions (height, width, length).
+* **Dynamic Vehicle Attitude:** Manages full vehicle attitude changes including roll, pitch, and yaw. 
+* **Coordinate System Tracking:** As the vehicle attitude and steering angles update, all individual tyre coordinate systems, the centre of rotation, and the vehicle CG update automatically. 
+* **Coordinate Transformations:** To handle geometry shifts with steering and attitude adjustments, the framework uses coordinate system transforms that convert between Cartesian and polar coordinate systems to ensure the alignment of local tyre coordinate systems without manual intervention.
 
-## 🧬 Advanced Mesh Strategy & Adaptive Mesh Refinement (AMR)
+## Advanced Mesh Strategy & Adaptive Mesh Refinement (AMR)
 To maintain a clean and efficient workflow:
-* **Elimination of Static Volumes:** Volumetric refinement regions are not built in CAD (Siemens NX), avoiding unnecessary bloat and rigid workflows.
-* **Adaptive Mesh Refinement (AMR):** The simulation utilises AMR to dynamically track and resolve complex wake structures. The solver tracks **Q-criterion** and total pressure coefficient ($Cp_0$) gradients, concentrating mesh density precisely where turbulent structures and vortices evolve.
+* **Elimination of Static Volumes:** Volumetric refinement regions are not built in CAD (Siemens NX) to reduce complexity for the user and promote automation.
+* **Adaptive Mesh Refinement (AMR):** The simulation utilises AMR to track and resolve complex wake structures. The solver tracks Q-criterion and total pressure coefficient ($Cp_0$) gradients, refining cells where turbulent structures and vortices evolve.
 
-## 📊 Visualisation & Post-Processing Results
+## Visualisation & Post-Processing Results
 
 ### Dynamic Cornering Overview & Flow Field
 ![Post-Process](Images/Post-Process.png)
-*Figure 1: Full-vehicle transient cornering simulation showing surface pressure* $Cp_s$ *and wake structures mapped across a curved track geometry.*
+*Figure 1: Full-vehicle cornering simulation showing surface pressure* $Cp_s$ *and wake structures mapped across a curved track geometry.*
 
 ### $Cp_0$ Sweep Scene
 
@@ -31,13 +31,13 @@ https://github.com/user-attachments/assets/a0888b04-f9da-4690-8bc5-d15b7050765c
 ![Pressure_Layout](Images/Pressure_Layout.png)
 *Figure 3: Multi-angle breakdown of static pressure distribution across all surfaces during cornering, with a* $Cp_0$ *isosurface.*
 
-### Q-Criterion Wake Resolution (AMR)
+### Q-Criterion Wake Resolution
 ![Q-Criterion_Layout](Images/Q-Criterion_Layout.png)
-*Figure 4: Isosurfaces of Q-criterion coloured by velocity magnitude, demonstrating the automated capture of tyre wakes, front wing Y-vortices, and rear wing tip vortices using Adaptive Mesh Refinement.*
+*Figure 4: Isosurfaces of Q-criterion coloured by velocity magnitude, demonstrating the automated capture of tyre wakes, front wing vortices and rear wing tip vortices using Adaptive Mesh Refinement.*
 
-## 🛠️ Software Stack
-* **CFD Solver & Automation:** Simcenter STAR-CCM+ (Parametric fields, Java/Macro automation, AMR)
-* **CAD Baseline:** Siemens NX
+## Software
+* **CFD:** Simcenter STAR-CCM+
+* **CAD:** Siemens NX
 
-## 🏁 Engineering Impact
-By consolidating geometry manipulation, coordinate transformations, and adaptive mesh refinement entirely within STAR-CCM+, this environment drastically reduces turnaround time for design iterations. It lets the team map how the aerodynamic centre of pressure shifts during high-g transient cornering, providing robust data to the vehicle performance team.
+## Impact
+Having a fully automated cornering CFD simulation allows integration with the custom Multidisciplinary Design Optimisation (MDO) tool for efficient design optimisation, the ability to better inform Lap-Time Simulations (LTS) and therefore, the ability to better inform overall aerodynamic design targets. 
